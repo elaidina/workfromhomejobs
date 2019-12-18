@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import CookieConsent from "react-cookie-consent"
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
@@ -65,8 +65,15 @@ class Layout extends React.Component {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby </a>
+          and free images downloaded from
+          <a href="https://www.canva.com"> Canva </a> ,
+          <a href="https://www.unsplash.com"> Unsplash </a> and
+          <a href="https://www.pexels.com"> Pexels. </a>
         </footer>
+        <CookieConsent>
+          This website uses cookies to enhance the user experience.
+        </CookieConsent>
       </div>
     )
   }
